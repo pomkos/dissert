@@ -1,0 +1,64 @@
+-----
+Files
+-----
+- bike_data.xlsx: raw output from bikes, plus some codings and calculations
+- updrs_data.xlsx: prepost updrs data of each participant/session, plus the entropy results from MatLab code
+- variable_descriptions.txt: just a text file where I explained what each column is
+
+------------
+Bike Dataset
+------------------------------------------------------------------------------------
+  Variables                   | Description
+------------------------------|-----------------------------------------------------
+ 'id_sess'                    | Participant ID and the bike session ID combined
+ 'id'                         | Participant ID only
+ 'session'                    | Bike session ID (anonymized)
+ 'subsession'                 | Some bike sessions had to be divided up, as the participant took breaks
+ 'took_breaks'                | TRUE: participant took break during the session
+ 'setting'                    | Setting used on the bike. First number is acceleration, second number is velocity
+ 'date'                       | Date and time of session
+ 'sec_elapsed'                | One second is one row. Corresponds to the number rows per participant's session
+ 'min_elapsed'                | The previous column divided by 60, rounded to the nearest integer
+ 'hr'                         | Participant heart rate
+ 'cadence'                    | Participant cadence
+ 'power'                      | Amount of power exerted by participant. Positive if more than the 
+                              | bike outputs, negative if participant lets the bike work for them
+ 'cadence_z_score'            | The z score of cadence, grouped by participant + session
+ 'power_z_score'              | The z score of heart rate, grouped by participant + session
+ 'hr_z_score'                 | The z score of power, grouped by participant + session
+ 'cadence_overall_z_scores'   | The z score of cadence, but for the entire dataset without regard to participant or cadence
+ 'power_overall_z_scores'     | The z score of power, but for the entire dataset without regard to participant or cadence
+ 'hr_overall_z_scores'        | The z score of heart rate, but for the entire dataset without regard to participant or cadence
+ 
+-------------
+UPDRS Dataset
+------------------------------------------------------------------------------------
+  Variables                   | Description
+------------------------------|-----------------------------------------------------
+ 'id_sess'                    | Participant ID and the bike session ID combined
+ 'id'                         | Participant ID only
+ 'session'                    | Bike session ID (anonymized)
+                              | NOTE: subsessions were averaged together, and are now just called "session"
+ 'setting'                    | Setting used on the bike. First number is acceleration, second number is velocity
+ 'updrs_pre'                  | UPDRS score taken before each session
+ 'updrs_post'                 | UPDRS score taken after each session
+ 'updrs_chg'                  | updrs_post - updrs_pre = updrs_chg
+ 'avg_hr'                     | Average heart rate
+ 'std_hr'                     | Standard deviation of heart rate
+ 'sam_hr'                     | Sample Entropy of heart rate
+ 'ap_hr'                      | Approximate Entropy of heart rate
+ 'spec_hr'                    | Spectral Entropy of heart rate
+ 'avg_cadense'                | Average cadense
+ 'std_cadense'                | Standard deviation of cadense
+ 'sam_cadense'                | Sample Entropy of cadense
+ 'ap_cadense'                 | Approximate Entropy of cadense
+ 'spec_cadense'               | Spectral Entropy of cadense
+ 'avg_power'                  | Average power
+ 'std_power'                  | Standard deviation of power
+ 'sam_power'                  | Sample Entropy of power
+ 'ap_power'                   | Approximate Entropy of power
+ 'spec_power'                 | Spectral Entropy of power
+ 'pow_cad_ratio'              | avg_power/avg_cadense = pow_cad_ratio
+ 'most_neg'                   | TRUE if >50% of power values of that session were negative (indicating bike did most of the work)
+ 'improved'                   | worse if updrs_chg is >0. same if updrs_chg is 0. better if updrs_chg is <0
+ 'improved_code'              | worse = -1; same = 0; better = 1

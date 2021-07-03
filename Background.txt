@@ -1,0 +1,40 @@
+pd_bike_robert
+    
+        See if you can find any type of association between UPDRS scores and cadence, power and/or the entropy measures.  Also, look to see if individual responses are different based on the severity of the symptoms in the updrs raw data files.  
+
+    PD Subjects came in for 3 sessions and each session had a different acceleration/velocity setting (this is the one I wanted you to look at).
+
+    KaKV file: bike data and total pre/post bike data
+    SMARTbike file: raw UPDRS scores from the same study as above.  The total UPDRS values from this sheet was transferred to the file above. 
+
+dana_data study
+
+    16 subjects with PD.  8 of them did 6 sessions of dynamic cycling (the other 8 did stretching).  In the SPSS file group 1 represents the cycling group.
+    Both the total UPDRS III and each of the tests are listed.  UPDRS was measured at baseline (Time 1) and after each session as well as 72 hours after the last session.  Compare the baseline and the data from session 6 (pre-post)
+    I need to find the bike data (if it is saved)
+
+Jonas Prop study ::: In Archive folder, under PD_Stuff
+
+    21 subjects with PD
+    Cross over study where all subjects did 1 session of dynamic cycling and one session of static cycling
+    I’ll need to get the raw data for the tremor vs bradykinesia analysis
+
+TMS long term study
+
+    4 subjects with PD completed between 28-41 sessions over a 3 month period
+    All subjects did dynamic cycling but only 1 (Subject 3) was randomized to high cadence dynamic cycling
+    UPDRS was measured at baseline and after 3 months of cycling
+
+TMS short term study ::: In Archive folder, under PD_Stuff
+
+    4 additional subjects with PD completed 3 sessions each,
+    Low variability (LV)- KA KV were set at 1,1
+    High variability (HV)- KA KV were set at 9,9
+    Static cycling
+    UPDRS was measured before and after each session.  
+
+NIH R21 study
+
+    N=47 subjects with PD
+    23 completed 3 sessions of static cycling and 24 completed 24 sessions of dynamic cycling
+    UPDRS was measured at baseline and after the last session of cycling 

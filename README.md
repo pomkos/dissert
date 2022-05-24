@@ -1,6 +1,6 @@
 # Dissertation
 
-Set of helper functions used in the dissertation thesis [[1]].
+Set of helper functions used in the dissertation thesis [[1]](#1).
 
 # Instructions
 
